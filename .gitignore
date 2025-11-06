@@ -1,0 +1,36 @@
+# Segreti e configurazioni locali
+*.env
+*.env.local
+*.key
+*.pem
+
+# Dipendenze
+node_modules/
+venv/
+env/
+vendor/
+
+# Log
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Database locali
+*.db
+*.sqlite
+*.sqlite3
+
+# File di build e artefatti
+dist/
+build/
+.output/
+
+# File del sistema operativo
+.DS_Store
+Thumbs.db
+
+# File IDE
+.vscode/
+.idea/
+*.swp
