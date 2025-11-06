@@ -1,0 +1,97 @@
+%
+% Template slides for conferences
+% Copyright (C) Gianmarco Lusvardi, 2024
+% You can use this template according to the terms of the GNU General Public
+% License version 3 or, at your option, any later version.
+%
+
+\documentclass{beamer}
+\usepackage[most]{tcolorbox}
+\usepackage{listings}
+\usepackage[export]{adjustbox}
+\usepackage[ruled]{algorithm2e}
+\usepackage{wasysym}
+\usepackage{url}
+
+
+\title{Titolo della Tesi}
+\author[C. Andidato]{Carlo Andidato}    % Candidate name
+\institute{SECloud Lab\\Dipartimento di Ingegneria ``Enzo Ferrari''\\Università degli Studi di Modena e Reggio Emilia}
+\newcommand{\supervisors}{
+	\underline{Relatori:}\\
+	Prof. \textbf{Docente Fittizio} \\
+	Prof. \textbf{Professore Fittizio} \\
+	\vspace{1ex}
+	\underline{Correlatore:}\\
+	Dr. \textbf{Ricercatore Fittizio}
+}
+
+\date{\today}    % Change with the date of the presentation
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                             %
+%                 FORMATTING                  %
+%                                             %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input{formatting.tex}
+\SetKwComment{Comment}{/* }{ */}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                             %
+%                   SLIDES                    %
+%                                             %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\begin{frame}[plain]
+	\titlepage
+\end{frame}
+
+\section{First Section of my Slides}
+\begin{frame}{Slide Title}
+	\begin{itemize}
+		\item First point
+			\begin{itemize}
+				\item First subpoint
+			\end{itemize}
+		\item Second point
+			\begin{itemize}
+				\item Second subpoint
+			\end{itemize}
+		\item Third point
+	\end{itemize}
+\end{frame}
+
+\section{Base knowledge}
+
+\begin{frame}{Insert images}
+	\begin{figure}
+		\includegraphics[width=\textwidth]{meme.jpg}
+	\end{figure}
+	From: \url{https://reddit.com/r/programminghorror/comments/1g67616/my_new_memory_allocator_ai_is_the_future/}
+\end{frame}
+
+\section{Columns}
+\begin{frame}{Columns layout}
+	\begin{columns}
+		\begin{column}{0.7\textwidth}
+			\begin{itemize}
+				\item ``The Sri Lankan elephant (Elephas maximus maximus) is native to Sri Lanka''
+				\item ``It is estimated that Sri Lanka has the highest density of elephants in Asia''
+				\item ``Elephants are classified as megaherbivores and consume up to 150 kg (330 lb) of plant matter per day''
+				\item Source: \url{https://en.wikipedia.org/wiki/Sri_Lankan_elephant}
+			\end{itemize}
+		\end{column}
+		\begin{column}{0.3\textwidth}
+			\begin{figure}
+				\includegraphics[width=0.9\linewidth]{elefanti.jpg}
+			\end{figure}
+			\scriptsize
+			Source: \url{https://commons.wikimedia.org/wiki/File:Sri_Lankan_elephant_(Elephas_maximus_maximus)_female_and_young_6.jpg} \\
+			Author: Charlesjsharp; Licensed under CC-BY-SA 4.0
+		\end{column}
+	\end{columns}
+\end{frame}
+
+\end{document}

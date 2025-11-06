@@ -1,0 +1,84 @@
+\documentclass{beamer}
+\usepackage[most]{tcolorbox}
+\usepackage{listings}
+\usepackage[export]{adjustbox}
+\usepackage[ruled]{algorithm2e}
+\usepackage{wasysym}
+\usepackage{url}
+
+
+\title{Titolo del paper}
+\author[A. Presentatore, D. Fittizio, A. Autore, A. Autori, M. Rossi]{
+	\underline{Autore Presentatore \inst{1}} \and Docente Fittizio \inst{1} \and Altro Autore \inst{2} \and Ancora Autori\inst{2} \and Mario Rossi\inst{1}
+}
+\institute{\inst{1} Università degli Studi di Modena e Reggio Emilia\\ \texttt{name.surname@unimore.it} \and \inst{2} Alma Mater Studiorum -- Università di Bologna\\ \texttt{name.surname@unibo.it}}
+
+\date[NomeConf24]{Nome Conferenza -- 27 Ottobre 2024}    % Change with the date of the conference
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                             %
+%                 FORMATTING                  %
+%                                             %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input{formatting.tex}
+\SetKwComment{Comment}{/* }{ */}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                             %
+%                   SLIDES                    %
+%                                             %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\begin{frame}[plain]
+	\titlepage
+\end{frame}
+
+\section{First Section of my Slides}
+\begin{frame}{Slide Title}
+	\begin{itemize}
+		\item First point
+			\begin{itemize}
+				\item First subpoint
+			\end{itemize}
+		\item Second point
+			\begin{itemize}
+				\item Second subpoint
+			\end{itemize}
+		\item Third point
+	\end{itemize}
+\end{frame}
+
+\section{Base knowledge}
+
+\begin{frame}{Insert images}
+	\begin{figure}
+		\includegraphics[width=\textwidth]{meme.jpg}
+	\end{figure}
+	From: \url{https://reddit.com/r/programminghorror/comments/1g67616/my_new_memory_allocator_ai_is_the_future/}
+\end{frame}
+
+\section{Columns}
+\begin{frame}{Columns layout}
+	\begin{columns}
+		\begin{column}{0.7\textwidth}
+			\begin{itemize}
+				\item ``The Sri Lankan elephant (Elephas maximus maximus) is native to Sri Lanka''
+				\item ``It is estimated that Sri Lanka has the highest density of elephants in Asia''
+				\item ``Elephants are classified as megaherbivores and consume up to 150 kg (330 lb) of plant matter per day''
+				\item Source: \url{https://en.wikipedia.org/wiki/Sri_Lankan_elephant}
+			\end{itemize}
+		\end{column}
+		\begin{column}{0.3\textwidth}
+			\begin{figure}
+				\includegraphics[width=0.9\linewidth]{elefanti.jpg}
+			\end{figure}
+			\scriptsize
+			Source: \url{https://commons.wikimedia.org/wiki/File:Sri_Lankan_elephant_(Elephas_maximus_maximus)_female_and_young_6.jpg} \\
+			Author: Charlesjsharp; Licensed under CC-BY-SA 4.0
+		\end{column}
+	\end{columns}
+\end{frame}
+
+\end{document}

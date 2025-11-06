@@ -1,0 +1,18 @@
+\begin{thebibliography}{1}
+
+\bibitem{feige:zero}
+Uriel Feige, Amos Fiat, and Adi Shamir.
+\newblock Zero-knowledge proofs of identity.
+\newblock {\em Journal of cryptology}, 1(2):77--94, 1988.
+
+\bibitem{google:scholar}
+{Google}.
+\newblock Google scholar.
+\newblock \url{https://scholar.google.it/}, visited in Sep. 2016.
+
+\bibitem{VeinsDoc}
+{Veins Team}.
+\newblock Veins - the open source vehicular network simulation framework.
+\newblock https://veins.car2x.org/documentation/, 2025.
+
+\end{thebibliography}

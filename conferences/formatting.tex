@@ -1,0 +1,71 @@
+\usetheme{CambridgeUS}
+\useoutertheme{infolines}
+
+\definecolor{unimorered}{RGB}{209, 65, 36}
+\setbeamercolor*{section in head/foot}{bg=unimorered, fg=white}
+\setbeamercolor{frametitle}{bg=white,fg=black}
+\setbeamercolor{title}{bg=unimorered,fg=white}
+
+\makeatother
+
+\setbeamertemplate{headline}
+{%
+	\leavevmode%
+		\begin{beamercolorbox}[wd=.65\paperwidth,ht=2.5ex,dp=1.125ex]{section in head/foot}%
+		\hbox to .65\paperwidth{\hspace{3ex}\it\inserttitle\hfil}
+	\end{beamercolorbox}%
+		\begin{beamercolorbox}[wd=.35\paperwidth,ht=2.5ex,dp=1.125ex]{section in head/foot}%
+		\hbox to .35\paperwidth{\hfil\thesection. \insertsectionhead\hspace{5ex}}
+	\end{beamercolorbox}%
+}
+
+\setbeamertemplate{footline}
+{
+	\leavevmode%
+		\hbox{%
+			\begin{beamercolorbox}[wd=.9\paperwidth,ht=2.25ex,dp=1ex,center]{title in head/foot}%
+				\usebeamerfont{title in head/foot}\center \insertdate
+				\end{beamercolorbox}%
+				\begin{beamercolorbox}[wd=.1\paperwidth,ht=2.25ex,dp=1ex,center]{title in head/foot}%
+				\usebeamerfont{title in head/foot}\insertframenumber{} / \inserttotalframenumber\hspace*{1ex}
+			\end{beamercolorbox}}%
+				\vskip0pt%
+}
+
+
+\setbeamertemplate{enumerate items}[default]
+\setbeamercolor{enumerate items}{fg=black}
+\setbeamercolor{itemize item}{fg=unimorered}
+\setbeamertemplate{itemize item}[circle]
+\setbeamertemplate{itemize subitem}{\usebeamerfont*{itemize subitem}--}
+\setbeamercolor{itemize subitem}{fg=unimorered}
+
+\setbeamertemplate{title page}
+{
+	\begin{minipage}{\textwidth}
+	\vspace{2.5ex}
+	\begin{figure}
+	\includegraphics[height=7ex,right]{logo-unimore.pdf}
+	\end{figure}
+	\vspace{1.25ex}
+	\end{minipage}
+	\vspace{1.25ex}
+	\begin{beamercolorbox}[wd=\paperwidth,sep=2ex,center]{title}
+	\vspace{5ex}
+	\begin{minipage}{\textwidth}
+	%\par\noindent\rule{5ex}{2pt}\par
+		\usebeamerfont{title}\usebeamercolor[fg]{title}\centering{\sc\bf\inserttitle}\par
+		\end{minipage}
+	\vfill
+		\vspace{5ex}
+	\begin{minipage}{\textwidth}
+	\usebeamerfont{author}\usebeamercolor[fg]{author}\centering{\bfseries\insertauthor}\par\vspace{5ex}
+	\footnotesize\insertinstitute\par\vspace{3ex}
+	\hspace*{\fill}\scriptsize{\emph{\insertdate}}
+	\end{minipage}
+	\vfill
+		\vspace{15ex}
+	\end{beamercolorbox}
+}
+\makeatletter
+\setbeamertemplate{navigation symbols}{}

@@ -1,0 +1,84 @@
+%
+% Template slides for Bachelor's and Master's thesis
+% Copyright (C) Gianmarco Lusvardi, 2024
+% You can use this template according to the terms of the GNU General Public
+% License version 3 or, at your option, any later version.
+%
+
+\usepackage{etoolbox}
+
+\usetheme{CambridgeUS}
+\useoutertheme{infolines}
+
+\definecolor{unimorered}{RGB}{209, 65, 36}
+\setbeamercolor*{section in head/foot}{bg=unimorered, fg=white}
+\setbeamercolor{frametitle}{bg=white,fg=black}
+\setbeamercolor{title}{bg=unimorered,fg=white}
+
+\makeatother
+
+\setbeamertemplate{headline}
+{%
+	\leavevmode%
+		\begin{beamercolorbox}[wd=.65\paperwidth,ht=2.5ex,dp=1.125ex]{section in head/foot}%
+			\hbox to .65\paperwidth{\hspace{3ex}\inserttitle\hfil}
+	\end{beamercolorbox}%
+		\begin{beamercolorbox}[wd=.35\paperwidth,ht=2.5ex,dp=1.125ex]{section in head/foot}%
+		\hbox to .35\paperwidth{\hfil\thesection. \insertsectionhead\hspace{5ex}}
+	\end{beamercolorbox}%
+}
+
+\setbeamertemplate{footline}
+{
+	\leavevmode%
+		\hbox{%
+			\begin{beamercolorbox}[wd=.9\paperwidth,ht=2.25ex,dp=1ex,center]{title in head/foot}%
+				\usebeamerfont{title in head/foot}\center \insertdate
+				\end{beamercolorbox}%
+				\begin{beamercolorbox}[wd=.1\paperwidth,ht=2.25ex,dp=1ex,center]{title in head/foot}%
+				\usebeamerfont{title in head/foot}\insertframenumber{} / \inserttotalframenumber\hspace*{1ex}
+			\end{beamercolorbox}}%
+				\vskip0pt%
+}
+
+
+\setbeamertemplate{enumerate items}[default]
+\setbeamercolor{enumerate items}{fg=black}
+\setbeamercolor{itemize item}{fg=unimorered}
+\setbeamertemplate{itemize item}[circle]
+\setbeamertemplate{itemize subitem}{\usebeamerfont*{itemize subitem}--}
+\setbeamercolor{itemize subitem}{fg=unimorered}
+
+\setbeamertemplate{title page}
+{
+	\hspace{-15ex}
+	\begin{minipage}{\textwidth}
+	\vspace{2.5ex}
+	\begin{figure}
+	\includegraphics[left,height=5ex]{logo-secloud.pdf}
+	\end{figure}
+	\vspace{1.25ex}
+	\end{minipage}
+	\vspace{1.25ex}
+	\begin{beamercolorbox}[wd=\paperwidth,sep=2ex,center]{title}
+	\vspace{5ex}
+	\begin{minipage}{\textwidth}
+	%\par\noindent\rule{5ex}{2pt}\par
+		\usebeamerfont{title}\usebeamercolor[fg]{title}\centering{\bf\inserttitle}\par
+		\end{minipage}
+	\vfill
+		\vspace{5ex}
+	\begin{minipage}{0.49\textwidth}
+		\usebeamerfont{author}\usebeamercolor[fg]{author}\underline{Candidato:}\\\bfseries\insertauthor\par\vspace{5ex}
+	\end{minipage}
+	\begin{minipage}{0.49\textwidth}
+		\usebeamerfont{author}\usebeamercolor[fg]{author}
+		\begin{flushright}\supervisors\end{flushright}\par\vspace{5ex}
+	\end{minipage}
+	\footnotesize\insertinstitute\par\vspace{3ex}
+	\vfill
+		\vspace{15ex}
+	\end{beamercolorbox}
+}
+\makeatletter
+\setbeamertemplate{navigation symbols}{}
